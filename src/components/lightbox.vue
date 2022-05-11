@@ -5,7 +5,11 @@
                 <div class="modal-container">
                     <div class="modal-body" v-if="currStore">
                         <!-- 內容放這裡 -->
-                        <div>{{ currStore }}</div>
+                        <div>藥居名稱：{{ currStore.name }} </div>
+                        <div>地址：{{ currStore.address }} </div>
+                        <div>電話：{{ currStore.phone }} </div>
+                        <div>目前庫存：{{ currStore.stock }} </div>
+                        <div>注意事項：{{ currStore.note }} </div>
                     </div>
                 </div>
             </div>

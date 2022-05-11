@@ -54,7 +54,7 @@ export default {
                 shadowSize: [41, 41],
             }
 
-            const marker = L.marker([item.logitude, item.latitude], ICON)
+            const marker = L.marker([item.latitude,item.logitude], ICON)
                 .addTo(this.map)
                 .bindPopup(`<h2 class="popup-name">${item.name}</h2>`)
                 .on('click',()=>{
@@ -79,7 +79,7 @@ export default {
         triggerPopup(markerID){
             const marker = this.markers.find((d) => d.markerID === markerID)
 
-            this.map.flyTo(new L.latLng(marker.lng, marker.lat), 15)
+            this.map.flyTo(new L.latLng(marker.lat, marker.lng), 15)
             marker.openPopup()
         }
     },
