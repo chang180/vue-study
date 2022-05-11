@@ -7,7 +7,11 @@
     "preview": "vite preview --port 5050"
   },
   "dependencies": {
-    "vue": "^3.2.33"
+    "leaflet": "^1.8.0",
+    "sass": "^1.51.0",
+    "scss": "^0.2.4",
+    "vue": "^3.2.33",
+    "vuex": "^4.0.2"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^2.3.1",
