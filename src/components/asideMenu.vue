@@ -28,16 +28,11 @@
 
         <div class="mask-info">
           <i class="fas fa-head-side-mask"></i>
-          <span>大人口罩: {{ s.mask_adult}} 個</span>
+          <span>存量: {{ s.stock}} 個</span>
         </div>
 
         <div class="mask-info">
-          <i class="fas fa-baby"></i>
-          <span>兒童口罩: {{ s.mask_child}} 個</span>
-        </div>
-
-        <div class="mask-info">
-          最後更新時間: {{ s.updated}}
+          最後更新時間: {{ s.time}}
         </div>
 
         <button class="btn-store-detail" @click="openInfoBox(s.id)">
